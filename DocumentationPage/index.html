@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>React Documentation</title>
+    <meta name="description" content="Documentation page for ReactJS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <h1>React Documentation</h1>
+        <ol>
+            <a href="#getting-started">
+                <li>Getting Started</li>
+            </a>
+            <a href="#add_react_to_website">
+                <li>Add React to a Website</li>
+            </a>
+            <a href="#create_new_react_app">
+                <li>Create a New React App</li>
+            </a>
+            <a href="#">
+                <li>Hello World</li>
+            </a>
+            <a href="#">
+                <li>Introducing JSX</li>
+            </a>
+            <a href="#">
+                <li>Rendering Elements</li>
+            </a>
+            <a href="#">
+                <li>Components and Props</li>
+            </a></li>
+            <a href="#">
+                <li>State and Lifecycle</li>
+            </a></li>
+            <a href="#">
+                <li>Handling Events</li>
+            </a>
+            <a href="#">
+                <li>Conditional Rendering</li>
+            </a>
+            <a href="#">
+                <li>Lists and Keys</li>
+            </a>
+            <a href="#">
+                <li>Forms</li>
+            </a>
+            <a href="#">
+                <li>Lifting State Up</li>
+            </a>
+            <a href="#">
+                <li>Composition vs Inheritance</li>
+            </a>
+            <a href="#">
+                <li>Thinking In React</li>
+            </a>
+            <a href="#">
+                <li>Reference</li>
+            </a>
+        </ol>
+    </nav>
+
+    <main id="main-doc" class="main-doc">
+        <section class="main-section" id="Getting_Started">
+            <header>
+                <h1>Getting Started</h1>
+            </header>
+            <p>React is a JavaScript library for building user interfaces. Learn what React is all
+                about on <a href="https://reactjs.org/">our homepage</a> or
+                <a href="https://reactjs.org/tutorial/tutorial.html">in the tutorial</a>.
+            </p>
+            <h3>Try React</h3>
+            <p>React has been designed from the start for gradual adoption, and <strong>you can use as little
+                    or as much React as you need.</strong> Whether you want to get a taste of React, add some
+                interactivity to a simple HTML page, or start a complex React-powered app, the links in this section
+                will help you get started.
+            </p>
+            <h3>Online Playgrounds</h3>
+            <p>If you're interested in playing around with React, you can use an online code playground. Try a Hello
+                World template on <a href="https://reactjs.org/redirect-to-codepen/hello-world">CodePen</a>,
+                <a href="https://codesandbox.io/s/new">CodeSandbox</a>, or <a href="https://stackblitz.com/fork/react">
+                    Stackblitz</a>.<br>
+            </p>
+
+            <p>If you prefer to use your own text editor, you can also
+                <a
+                    href="https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html">
+                    download this HTML file</a>, edit it, and open it from the local filesystem in your browser. It does
+                a slow
+                runtime code transformation, so we’d only recommend using this for simple demos
+            </p>
+
+            <h3>Add React to a Website</h3>
+            <p>You can <a href="https://reactjs.org/docs/add-react-to-a-website.html">add React to an HTML page in one
+                    minute</a>. You can then either gradually expand its presence, or keep it contained to a few dynamic
+                widgets.</p>
+
+            <h3>Create a New React App</h3>
+            <p>When starting a React project, a <a href="https://reactjs.org/docs/create-a-new-react-app.html">simple
+                    HTML page with script tags</a> might still be the best option. It only takes a minute to set
+                up!<br></p>
+
+            <p>As your application grows, you might want to consider a more integrated setup. There are several
+                JavaScript toolchains we recommend for larger applications. Each of them can work with little to
+                no configuration and lets you take full advantage of the rich React ecosystem. <br>
+                <a href="https://reactjs.org/docs/create-a-new-react-app.html">Learn how.</a>
+            </p>
+            <h3>Learn React</h3>
+            <p>People come to React from different backgrounds and with different learning styles. Whether you
+                prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.</p>
+            <ul>
+                <li>If you prefer to <strong>learn by doing</strong>, start with our practical tutorial.</li>
+                <li>If you prefer to <strong>learn concepts step by step</strong>, start with our guide to main
+                    concepts.</li>
+            </ul>
+            <p>Like any unfamiliar technology, React does have a learning curve. With practice and some patience,
+                you will get the hang of it.</p>
+
+            <h3>First Examples</h3>
+            <p>The <a href="https://reactjs.org/">React homepage</a> contains a few small React examples with a
+                live editor. Even if you don’t know anything about React yet, try changing their code and see how
+                it affects the result.</p>
+
+            <h3>React for Beginners</h3>
+            <p>If you feel that the React documentation goes at a faster pace than you’re comfortable with, check
+                out <a href="https://www.taniarascia.com/getting-started-with-react/">this overview of React by
+                    Tania Rascia</a>. It introduces the most important React concepts in a detailed, beginner-friendly
+                way. Once you’re done, give the documentation another try!</p>
+
+            <h3>React for Designers</h3>
+            <p>If you’re coming from a design background, <a href="https://reactfordesigners.com/">these resources</a>
+                are a great place to get started.</p>
+
+            <h3>JavaScript Resources</h3>
+            <p>The React documentation assumes some familiarity with programming in the JavaScript language.
+                You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the
+                same time.<br></p>
+            <p>We recommend going through this JavaScript overview to check your knowledge level. It will
+                take you between 30 minutes and an hour but you will feel more confident learning React.</p>
+
+            <div class="tip">
+                <h4>Tip</h4>
+                <p>Whenever you get confused by something in JavaScript,
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a> and
+                    <a href="https://javascript.info/">javascript.info</a> are great websites to check. There
+                    are also <a href="https://reactjs.org/community/support.html">community support forums</a>
+                    where you can ask for help.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Add_React_to_a_Website">
+            <header>
+                <h1>Add React to a Website</h1>
+            </header>
+            <p>React has been designed from the start for gradual adoption, and <strong>you can use as little or as
+                    much React as you need.</strong> Perhaps you only want to add some “sprinkles of interactivity” to
+                an existing page. React components are a great way to do that.<br></p>
+            <p>The majority of websites aren’t, and don’t need to be, single-page apps. With a <strong>few lines of
+                    code and no build tooling</strong>, try React in a small part of your website. You can then either
+                gradually expand its presence, or keep it contained to a few dynamic widgets.</p>
+
+            <h3>Add React in One Minute</h3>
+            <p>In this section, we will show how to add a React component to an existing HTML page. You can follow
+                along with your own website, or create an empty HTML file to practice.<br></p>
+            <p>There will be no complicated tools or install requirements — <strong>to complete this section, you only
+                    need an internet connection, and a minute of your time.</strong></p>
+
+            <h3>Step 1: Add a DOM Container to the HTML</h3>
+            <p>First, open the HTML page you want to edit. Add an empty
+            <div> tag to mark the spot where you want
+                to display something with React. For example:</p>
+
+                <code class="language-html">&lt;div id="like_button_container"&gt;&lt;/div&gt;</code>
+
+                <p>We gave this <span class="yellow">&lt;div&gt;</span> a unique <span class="yellow">id</span> HTML
+                    attribute. This will allow us to find it from the JavaScript code later and display a React
+                    component inside of it.</p>
+
+                <div class="tip">
+                    <h4>Tip</h4>
+                    <p>You can place a “container” &lt;div&gt; like this <strong>anywhere</strong> inside the
+                        &lt;body&gt;
+                        tag. You may have as many independent DOM containers on one page as you need. They are usually
+                        empty — React will replace any existing content inside DOM containers.</p>
+                </div>
+
+                <h3>Step 2: Add the Script Tags</h3>
+                <p>Next, add three <span class="yellow">&lt;script&gt;</span> tags to the HTML page right before the
+                    closing &lt;/body&gt; tag:</p>
+
+                <code class="language-html">
+            &lt;!-- ... other HTML ... --&gt;<br>
+            <br>
+            &lt;!-- Load React. --&gt;<br>
+            &lt;!-- Note: when deploying, replace "development.js" with "production.min.js". --&gt;<br>
+            &lt;script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin>&lt;/script><br>
+            &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin>&lt;/script><br>
+            <br>
+            &lt;!-- Load our React component. --&gt;<br>
+            &lt;script src="like_button.js">&lt;/script><br>
+            <br>
+            &lt;/body&gt;
+        </code>
+
+                <p>The first two tags load React. The third one will load your component code.</p>
+
+                <h3>Step 3: Create a React Component</h3>
+                <p>Create a file called <span class="yellow">like_button.js</span> next to your HTML page.<br></p>
+
+                <p>Open <strong><a href="https://gist.github.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157
+            ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js">this starter code</a></strong> and paste it
+                    into the file you created.</p>
+
+                <div class="tip">
+                    <h4>Tip</h4>
+                    <p>This code defines a React component called <span class="yellow">LikeButton</span>. Don’t worry
+                        if you don’t understand it yet — we’ll cover the building blocks of React later in our
+                        <a href="https://reactjs.org/tutorial/tutorial.html">hands-on tutorial</a> and
+                        <a href="https://reactjs.org/docs/hello-world.html">main
+                            concepts guide</a>. For now, let’s just get it showing on the screen!
+                    </p>
+                </div>
+
+                <p>After the <strong><a href="https://gist.github.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157
+            ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js">starter code</a></strong>, add three lines to the
+                    bottom of <span class="yellow">like_button.js:</span></p>
+
+                <code>
+            // ... the starter code you pasted ...<br>
+            <br>
+            const domContainer = document.querySelector('#like_button_container');<br>
+            const root = ReactDOM.createRoot(domContainer);<br>
+            root.render(e(LikeButton));<br>
+        </code>
+
+                <p>These lines of code find the <span class="yellow">&lt;div&gt;</span> we added to our HTML in the
+                    first
+                    step, and then display our “Like” button React component inside of it.</p>
+
+                <h3>That's It!</h3>
+                <p>There is no step four. <strong>You have just added the first React component to your website.</p>
+                <p><a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605">View the full example
+                        source
+                        code</a></p>
+                <p><a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/87f0b6
+                f34238595b44308acfb86df6ea43669c08.zip">Download the full example (2KB zipped)</a></strong></p>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Create_a_new_React_App">
+            <header>
+                <h1>Create a new React App</h1>
+            </header>
+            <p>This page describes a few popular React toolchains which help with tasks like:</p>
+            <ul>
+                <li>Scaling to many files and components.</li>
+                <li>Using third-party libraries from npm.</li>
+                <li>Detecting common mistakes early.</li>
+                <li>Live-editing CSS and JS in development.</li>
+                <li>Optimizing the output for production.</li>
+            </ul>
+            <p>The toolchains recommended on this page don’t require configuration to get started.</p>
+        </section>
+
+        <section class="main-section" id="Hello_World"></section>
+        <header>
+            <h1>Hello World</h1>
+        </header>
+        <section class="main-section" id="Introducing_JSX"></section>
+        <header>
+            <h1>Introducing JSX</h1>
+        </header>
+    </main>
+</body>
+
+</html>
