@@ -1,2 +1,1 @@
-# FCC-Respnsive-Web-Design
-FreeCodeCamp Responsive web design course
+# Collection of responsive web design projects
