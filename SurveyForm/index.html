@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="speaker-form-header">
+        <h1 id="title">Survey form</h1>
+        <p id="description"><em>Fill out this form.</em></en>
+        </p>
+    </header>
+
+    <form id="survey-form" action="" method="get" class="speaker-form">
+        <div class="form-row">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="zaid" required>
+        </div>
+        <div class="form-row">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="zaid@example.com" required/>
+        </div>
+        <div class="form-row">
+            <label id="number-label" for="number">Number</label>
+            <input type="number" name="number" id="number" min="1", max="10" placeholder="1">
+        </div>
+        <fieldset class="legacy-form-row">
+            <legend>Type of talk</legend>
+            
+            <input id="talk-type-1" name="talk-type" type="radio" value="main-stage" />
+            <label for="talk-type-1" class="radio-label">Main Stage</label>
+
+            <input id="talk-type-2" name="talk-type" type="radio" value="workshop" checked />
+            <label for="talk-type-2" class="radio-label">Workshop</label>
+
+        </fieldset>
+        
+        <div class="form-row">
+            <label for="t-shirt">T-Shirt Size</label>
+            <select id="dropdown" name="t-shirt" id="t-shirt">
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+            
+        <div class="form-row">
+            <label for="abstract">Abstract</label>
+            <textarea name="abstract" id="abstract"></textarea>
+            <div class="instructions">Describe your talk in 500 words or less</div>
+        </div>
+
+        <div class="form-row">
+            <label class="checkbox-label" for="available">
+                <input id="available"
+                    name="available"
+                    type="checkbox"
+                    value="available"/>
+            <span>I'm actually available the date of the talk</span>
+            </label>
+        </div>
+
+        <div class="form-row">
+            <label class="checkbox-label" for="vegan">
+                <input id="vegan"
+                    name="vegan"
+                    type="checkbox"
+                    value="vegan"/>
+            <span>I'm vegan</span>
+            </label>
+        </div>
+
+
+        <div class="form-row">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
