@@ -12,21 +12,23 @@
 
 <body>
     <nav class="navbar" id="navbar">
-        <h1>React Documentation</h1>
+        <header>
+            React Documentation
+        </header>
         <ol>
-            <a href="#getting-started">
+            <a class=nav-link href="#Getting_Started">
                 <li>Getting Started</li>
             </a>
-            <a href="#add_react_to_website">
+            <a class=nav-link href="#Add_React_to_a_Website">
                 <li>Add React to a Website</li>
             </a>
-            <a href="#create_new_react_app">
+            <a class=nav-link href="#Create_a_New_React_App">
                 <li>Create a New React App</li>
             </a>
-            <a href="#">
+            <a class=nav-link href="#Hello_World">
                 <li>Hello World</li>
             </a>
-            <a href="#">
+            <a class=nav-link href="#Introducing_JSX">
                 <li>Introducing JSX</li>
             </a>
             <a href="#">
@@ -67,9 +69,7 @@
 
     <main id="main-doc" class="main-doc">
         <section class="main-section" id="Getting_Started">
-            <header>
-                <h1>Getting Started</h1>
-            </header>
+            <header>Getting Started</header>
             <p>React is a JavaScript library for building user interfaces. Learn what React is all
                 about on <a href="https://reactjs.org/">our homepage</a> or
                 <a href="https://reactjs.org/tutorial/tutorial.html">in the tutorial</a>.
@@ -158,7 +158,7 @@
 
         <section class="main-section" id="Add_React_to_a_Website">
             <header>
-                <h1>Add React to a Website</h1>
+                Add React to a Website
             </header>
             <p>React has been designed from the start for gradual adoption, and <strong>you can use as little or as
                     much React as you need.</strong> Perhaps you only want to add some “sprinkles of interactivity” to
@@ -256,10 +256,8 @@
 
         <hr>
 
-        <section class="main-section" id="Create_a_new_React_App">
-            <header>
-                <h1>Create a new React App</h1>
-            </header>
+        <section class="main-section" id="Create_a_New_React_App">
+            <header>Create a New React App</header>
             <p>This page describes a few popular React toolchains which help with tasks like:</p>
             <ul>
                 <li>Scaling to many files and components.</li>
@@ -268,17 +266,159 @@
                 <li>Live-editing CSS and JS in development.</li>
                 <li>Optimizing the output for production.</li>
             </ul>
-            <p>The toolchains recommended on this page don’t require configuration to get started.</p>
+            <p>The toolchains recommended on this page <strong>don’t require configuration to get started.</strong></p>
+
+            <h3>You Might Not Need a Toolchain</h3>
+            <p>If you don’t experience the problems described above or don’t feel comfortable using JavaScript tools
+                yet, consider <a href="https://reactjs.org/docs/add-react-to-a-website.html">adding React as a
+                    plain &lt;script&gt; tag on an HTML page</a>, optionally
+                <a href="https://reactjs.org/docs/add-react-to-a-website.html#optional-try-react-with-jsx">with JSX.</a>
+            </p>
+
+            <h3>Create React App</h3>
+            <p>Create React App is a comfortable environment for <strong>learning React</strong>, and is the best way to
+                start building
+                <strong>a new <a href="https://reactjs.org/docs/glossary.html#single-page-application">single-page</a>
+                    application</strong> in React.<br>
+            </p>
+            <p>It sets up your development environment so that you can use the latest JavaScript features, provides a
+                nice developer
+                experience, and optimizes your app for production. You’ll need to have
+                <a href="https://nodejs.org/en/">Node >= 14.0.0 and npm >= 5.6</a> on your machine.
+                To create a project, run:
+            </p>
+
+            <code>
+                npx create-react-app my-app<br>
+                cd my-app<br>
+                npm start<br>
+            </code>
+
+            <div class="tip">
+                <h4>Note</h4>
+                <p>
+                    npx on the first line is not a typo — it’s a
+                    <a href="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b">package
+                        runner tool that comes with npm 5.2+.</a>
+                </p>
+            </div>
         </section>
 
-        <section class="main-section" id="Hello_World"></section>
-        <header>
-            <h1>Hello World</h1>
-        </header>
-        <section class="main-section" id="Introducing_JSX"></section>
-        <header>
-            <h1>Introducing JSX</h1>
-        </header>
+        <hr>
+
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <p>The smallest React example looks like this:</p>
+            <code>
+            const root = ReactDOM.createRoot(document.getElementById('root'));<br>
+            root.render(&lt;h1&gt;Hello, world!&lt;/h1&gt;);<br>
+        </code>
+            <p>It displays a heading saying “Hello, world!” on the page.<br></p>
+            <p><strong><a href="https://codepen.io/gaearon/pen/rrpgNB?editors=1010">Try it on CodePen</strong></a><br>
+            </p>
+            <p>Click the link above to open an online editor. Feel free to make some changes, and see how they affect
+                the
+                output. Most pages in this guide will have editable examples like this one.</p>
+
+            <h3>How to Read This Guide</h3>
+            <p>In this guide, we will examine the building blocks of React apps: elements and components. Once you
+                master them, you can create complex apps from small reusable pieces.</p>
+
+            <div class="tip">
+                <h4>Tip</h4>
+                <p>
+                    This guide is designed for people who prefer to <strong>learn concepts step by step</strong>. If you
+                    prefer to
+                    learn by doing, check out our <a href="https://reactjs.org/tutorial/tutorial.html">practical
+                        tutorial</a>. You might find this guide and the tutorial complementary to each other.
+                </p>
+            </div>
+
+            <p>This is the first chapter in a step-by-step guide about main React concepts. You can find a list of all
+                its
+                chapters in the navigation sidebar. If you’re reading this from a mobile device, you can access the
+                navigation
+                by pressing the button in the bottom right corner of your screen.</p>
+        </section>
+
+        <hr>
+
+        <section class="main-section" id="Introducing_JSX">
+            <header>
+                Introducing JSX
+            </header>
+            <p>Consider this variable declaration:</p>
+            <code>
+            const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;<br>
+            </code>
+            <p>This funny tag syntax is neither a string nor HTML.<br></p>
+            <p>
+                It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to
+                describe what the UI
+                should look like. JSX may remind you of a template language, but it comes with the full power of
+                JavaScript.<br>
+            </p>
+            <p>JSX produces React “elements”. We will explore rendering them to the DOM in the
+                <a href="https://reactjs.org/docs/rendering-elements.html">next section</a>. Below, you
+                can find the basics of JSX necessary to get you started.
+            </p>
+
+            <h3>Why JSX?</h3>
+            <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how
+                events are handled, how the state changes over time, and how the data is prepared for display.</p>
+
+            <p>Instead of artificially separating technologies by putting markup and logic in separate files,
+                React <a href="https://en.wikipedia.org/wiki/Separation_of_concerns"><em>separates concerns</em></a>
+                with loosely coupled units called “components” that contain both. We will
+                come back to components in a <a href="https://reactjs.org/docs/components-and-props.html">further
+                    section</a>,
+                but if you’re not yet comfortable putting markup in JS,
+                <a href="https://www.youtube.com/watch?v=x7cQ3mrcKaY">this talk</a> might convince you otherwise.<br>
+            </p>
+
+            <p>React <a href="https://reactjs.org/docs/react-without-jsx.html">doesn’t require</a> using JSX, but
+                most people find it helpful as a visual aid when working with UI
+                inside the JavaScript code. It also allows React to show more useful error and warning messages.<br></p>
+
+            <p>With that out of the way, let’s get started!</p>
+
+            <h3>Embedding Expressions in JSX</h3>
+            <p>In the example below, we declare a variable called <span class="yellow">name</span> and then use it
+                inside JSX by wrapping it in curly braces:</p>
+            <code>
+            const name = 'Josh Perez';<br>
+            const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;<br>
+            </code>
+            <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, <span
+                    class="yellow">2 + 2</span>,
+                <span class="yellow">user.firstName</span>,
+                or <span class="yellow">formatName(user)</span> are all valid JavaScript expressions.<br>
+            </p>
+
+            <p>In the example below, we embed the result of calling a JavaScript function, <span
+                    class="yellow">formatName(user)</span>,
+                into an <span class="yellow">&lt;h1&gt;</span> element.</p>
+
+            <code>
+                function formatName(user) {<br>
+                    &emsp;return user.firstName + ' ' + user.lastName;<br>
+                }<br>
+                <br>
+                const user = {<br>
+                    &emsp;firstName: 'Harper',<br>
+                    &emsp;lastName: 'Perez'<br>
+                };<br>
+                <br>
+                const element = ( <br>
+                &emsp;&lt;h1&gt;<br>
+                &emsp;&emsp;Hello, {formatName(user)}!<br>
+                &emsp;&lt;/h1&gt;<br>
+                );<br>
+                <br>
+            </code>
+        </section>
+
+        <hr>
     </main>
 </body>
 

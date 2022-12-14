@@ -7,6 +7,14 @@ body {
     text-align: center;
 }
 
+header {
+    background-color: rgb(177, 201, 255);
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
 #main-doc {
     width: 1380px;
     margin: 0 auto;
@@ -19,7 +27,8 @@ body {
     left: 5px;
     height: 100%;
     border-right: 2px solid #ccc;
-    z-index: 500;
+    z-index: 999;
+    background-color: rgb(177, 201, 255);
 
 }
 
@@ -64,8 +73,6 @@ section a {
     background-color: rgb(218, 250, 240);
     color: #000;
     text-decoration: underline;
-    -webkit-text-decoration-color: rgba(255, 244, 244, 0.4);
-    /* Safari */
     text-decoration-color: rgba(255, 244, 244, 0.4);
 }
 
@@ -111,4 +118,10 @@ code {
 section li {
     margin: 0 10px;
     padding: 5px;
+}
+
+@media only screen and (max-width: 1380px) {
+    #main-doc {
+        width: 100%;
+    }
 }
