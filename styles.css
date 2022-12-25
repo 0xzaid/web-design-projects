@@ -7,30 +7,27 @@
     width: 100%;
     max-width: 700px;
     box-sizing: border-box;
-
     margin-top: 50px;
 }
 
 body {
-    color: #414141; /* Dark gray */
-    background-color: #EEEEEE; /* Light gray */
+    color: #414141;
+    /* Dark gray */
+    background-color: #EEEEEE;
+    /* Light gray */
     font-size: 18px;
     color: #FFF;
-    background-color: #141414;
+    background-color: #282828;
+    font-family: "Helvetica", "Arial", sans-serif;
+
 }
 
-h1{
+h1 {
     font-size: 2em;
 }
 
-h2{
+h2 {
     font-size: 1.6em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-weight: normal;
-    text-align: center;
 }
 
 a {
@@ -45,15 +42,35 @@ p {
     margin-bottom: 20px;
 }
 
-ul{
-    list-style-position: inside;
+ul {
+    display:block;
 }
 
 li {
-    text-align: left;
+    list-style: none;
+    text-align: center;
+    background-color: #43A6C6;
+    width: 100%;
+    line-height: 60px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    color: #FFFFFF;
+    border-radius: 7px;
+    display:inline-block;
+}
 
+li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 7px;
+    width: 100%;
+    display:block
+
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ADD8E6;
 }
 
 hr {
@@ -67,23 +84,16 @@ hr {
     justify-content: center;
 }
 
-.table-of-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 130px;
-    margin-bottom: -25px;
-}
+
+
 .table-container {
     margin-top: 15px;
-    border: solid 1px #221f20;
-    border-radius: 7px;
     padding-right: 20px;
+    width: 100%;
 }
 
 footer {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     /* bottom of page */
     position: fixed;
@@ -95,28 +105,7 @@ footer {
     padding-top: 10px;
 }
 
-.column1 {
-    /* colored column on far left*/
-    background: rgb(2,0,36);
-    background: linear-gradient(273deg, rgba(2,0,36,1) 0%, rgba(100,100,238,1) 80%, rgba(0,212,255,1) 100%); 
-    width: 10%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-.column2 {
-    /* colored column on far right*/
-    background: rgb(2,0,36);
-    background: linear-gradient(93deg, rgba(2,0,36,1) 0%, rgba(100,100,238,1) 80%, rgba(0,212,255,1) 100%); 
-    width: 10%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+.heart {
+    color: #e25555;
+    font-size: 1.2rem;
 }
